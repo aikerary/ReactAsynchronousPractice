@@ -20,7 +20,7 @@ const Fruta = (props) => {
             <p>Precio: {fruta.price}</p>
             {
                 fruta.vendors.map((vendor) => (
-                    <a href="">vendor.name</a>
+                    <a href={vendor.self} key={vendor.id}>{vendor.name}</a>
                 ))
             }
         </div>
